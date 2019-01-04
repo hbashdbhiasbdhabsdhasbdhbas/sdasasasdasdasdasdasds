@@ -33,7 +33,7 @@ client.user.setGame(`LastCodes4Ever  `,"https://www.twitch.tv/dggamingbot")
 
 
 
-    var prefix = "$";
+
  
 client.on('message', function(msg) {
   let verifLevels = ["None", "Low", "Medium", "(╯°□°）╯︵  ┻━┻", "┻━┻ミヽ(ಠ益ಠ)ノ彡┻━┻"];
@@ -75,7 +75,6 @@ client.on('message', function(msg) {
 
 
 client.on('message', message => {
-var prefix = "$";
        if(message.content === prefix + "cc") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
  
@@ -126,7 +125,6 @@ client.on('message', msg => {
 	
 	
 client.on('message', message => {
- 
     if (message.content === "$bot") {
 var year = message.guild.createdAt.getFullYear()
 var month = message.guild.createdAt.getMonth()
@@ -300,7 +298,6 @@ client.on('guildMemberAdd', member => {
 	  
  1.36 KB
 client.on('message', message => {
-    var prefix = "$"
     if (message.content.startsWith(prefix + 'id')) {
         if (message.author.bot) return
         if (!message.guild) return message.reply('**This Command Just In Servers**')
@@ -329,7 +326,6 @@ client.on('message', message => {
        
 });
 
-var prefix = "$"
 client.on("message", (message) => {
     if (message.content.startsWith("${prefix}kick")) {
       if(!message.member.hasPermission('KICK_MEMBERS')) return message.reply('? ماعندك الصلاحيات');
@@ -345,7 +341,6 @@ client.on("message", (message) => {
 
 
 
-var prefix = "$"
 client.on('message', message => {
   if (message.author.xErenaa) return;
   if (!message.content.startsWith(prefix)) return;
